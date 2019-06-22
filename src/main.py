@@ -75,8 +75,6 @@ def main():
         #Create Git Repository instance
         requestedRepo = GithubRepository(inputObj.get('repOwner'), inputObj.get('repoTitle') )
 
-        #TODO DELETE 7ffab3df49643defb2981e761bceb9807e3794b4
-    
         #Retrieve all pull requests and its reviewers of the input repository
         pullRequestsAndTheirReviewers = gitGateway.get_pull_requests(
             requestedRepo)
